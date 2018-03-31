@@ -1,0 +1,126 @@
+body {
+	text-align: center;
+	user-select: none;
+}
+#headerCont {
+	display: block;
+}
+#header {
+	display: inline-block;
+	width: 512px;
+	height: 50px;
+	border-top: solid 4px #888;
+	border-left: solid 4px #888;
+	border-bottom: solid 4px #eee;
+	border-right: solid 4px #eee;
+	text-align: center;
+	background-color: #aaa;
+	position: relative;
+}
+#counter {
+	position: absolute;
+	left: 15px;
+	top: 5px;
+	background-color: #000;
+	height: 40px;
+	width: 100px;
+	color: #b00;
+	font-family: Digital;
+	text-align: right;
+	font-size: 40px;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+#smile {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	vertical-align: top;
+	background-image: url("smile.jpg");
+	background-position: left top;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.smileDead {
+	background-position: right bottom !important;
+}
+.smileWin {
+	background-position: left bottom !important;
+}
+#board {
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	border: solid 10px #aaa;
+	text-align: center;
+}
+.celNew {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	border-top: solid 4px #eee;
+	border-left: solid 4px #eee;
+	border-bottom: solid 4px #888;
+	border-right: solid 4px #888;
+	background: #aaa;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 40px;
+	font-family: "Arial Black";
+	vertical-align: middle;
+	line-height: 46px;
+}
+.celPressed {
+	border: solid 2px #888;
+	width: 46px;
+	height: 46px;
+	cursor: default;
+}
+.cel1 {
+	color: #00f;
+}
+.cel2 {
+	color: #090;
+}
+.cel3 {
+	color: #f00;
+}
+.cel4 {
+	color: #009;
+}
+.cel5 {
+	color: #900;
+}
+.cel6 {
+	color: #f176ed;
+}
+.cel7 {
+	color: #fdf74a;
+}
+.cel8 {
+	color: #02b5b5;
+}
+.celFlag {
+	background-image: url("flag.png");
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+.celMine {
+	background-image: url("mine.png");
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+.celMineExploded {
+	background-image: url("mine.png");
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-color: #b22;
+}
+@font-face {
+	font-family: 'Digital';
+	src: url("digital-7.ttf") format('truetype');
+}
